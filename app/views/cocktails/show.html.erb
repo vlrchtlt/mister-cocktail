@@ -1,2 +1,6 @@
-<h1>Cocktails#show</h1>
-<p>Find me in app/views/cocktails/show.html.erb</p>
+<div class="text-center">
+  <%= render "cocktail", cocktail: @cocktail %>
+  <hr>
+  <%= link_to t('define recipe'), new_cocktail_dose_path(@cocktail), class: "btn btn-primary" %>
+</div>
+
