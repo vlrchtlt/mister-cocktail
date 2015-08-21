@@ -1,5 +1,7 @@
 <div class="container text-center">
 <h2><%= @cocktail.name%></h2>
+<%= image_tag @cocktail.picture.url(:medium) %>
+<hr>
 <ul class="list-unstyled">
   <p>Liste des ingrédients</p>
     <% @cocktail.doses.each do |dose|%>
