@@ -1,7 +1,15 @@
-<%= simple_form_for [@dose, @cocktail] do |f| %>
-  <%= f.input :description %>
-  <%= f.input :cocktail_id %>
-  <%= f.input :ingredient, collection: ["lemon", "mint leaves", "ice"] %>
-  <%= f.button :submit%>
-<% end %>
+<h1 class="text-center">New Cocktail</h1>
+
+<div class="container text-center">
+  <%= render "form", cocktail: @cocktail %>
+</div>
+
+
+
+<%#= simple_form_for [@dose, @cocktail] do |f| %>
+  <%#= f.input :description %>
+  <%#= f.input :cocktail_id %>
+  <%#= f.input :ingredient, collection: ["lemon", "mint leaves", "ice"] %>
+  <%#= f.button :submit%>
+<%# end %>
 
